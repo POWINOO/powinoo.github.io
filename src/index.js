@@ -7,7 +7,7 @@ import { DataContextProvider } from "./Context/DataContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router basename='/site-web'>
+  <Router>
     <DataContextProvider>
       <App />
     </DataContextProvider>
