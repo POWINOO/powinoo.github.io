@@ -1,0 +1,94 @@
+.message-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 215px);
+    overflow-y: scroll;
+    position: relative;
+}
+
+.message-prive-btn, .mes-communaute-btn {
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin: 5px;
+    transition: all .3s ease-in-out;
+}
+.message-prive-btn{
+    background-color: #0040E2;
+    border: solid 2px #0040E2;
+}
+.mes-communaute-btn{
+    background-color: #00A513;
+    border: solid 2px #00A513;
+}
+.message-prive-btn:hover{
+    color: #0040E2;
+    background-color: #fff;
+}
+.mes-communaute-btn:hover{
+    color: #00A513;
+    background-color: #fff;
+}
+
+.tchat-titre {
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.form-tchat {
+    width: 100%;
+    /* top: 0px; */
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.form-tchat input {
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
+    width: 95%;
+    margin: 5px 5px 5px 0;
+    padding: 12px 10px;
+    font-size: 20px;
+    border-radius: 9999px;
+}
+
+
+.form-tchat button {
+    width: 47px;
+    height: 47px;
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .form-tchat {
+        position: absolute;
+    }
+}
+@media screen and (min-width: 900px) {
+
+    .message-prive-btn, .mes-communaute-btn {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .message-container {
+        height: calc(100% - 130px);
+    }
+}

@@ -1,0 +1,166 @@
+.cagnotte-modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.cagnotte-modal-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cagnotte-modal-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.close-cagnotte-modal{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image: url('../../assets/croix.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.cagnotte-modal-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.cagnotte-modal-header .modal-onglet{
+    width: 33.33333333333333333333%;
+    text-align: center;
+    font-size: 2.1vh;
+    font-weight: bold;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cagnotte-modal-header .modal-onglet.mo-active{
+    color: #fff;
+}
+.cagnotte-modal-header .modal-onglet.mo-active:nth-child(1){
+    background-color: #FFB300;
+}
+.cagnotte-modal-header .modal-onglet.mo-active:nth-child(2){
+    background-color: #DE0009;
+}
+.cagnotte-modal-header .modal-onglet.mo-active:nth-child(3){
+    background-color: #0040E2;
+}
+
+.cagnotte-modal-content{
+    width: 100%;
+    height: calc(100% - 82px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cagnotte-modal-titre{
+    font-size: 20px;
+    font-weight: bold;
+    /* margin: 10px 0; */
+}
+
+.cagnotte-modal-block{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.cagnotte-modal-text{
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+/* ============= Bon achat ==============*/
+
+.cagnotte-modal-block label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cagnotte-modal-block input {
+    width: 95%;
+    margin: 10px auto;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    text-align: center;
+    font-size: 17px;
+}
+
+.cagnotte-modal-block input:focus, .cagnotte-modal-block input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+}
+
+.cagnotte-modal-block input::placeholder {
+    color: #777;    
+}
+
+.cagnotte-modal-block input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.cagnotte-modal-block .redirect-maps, .cagnotte-modal-block .create-bon{
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 9999px;
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cagnotte-modal-block .redirect-maps{
+    background-color: #00A513;
+    border: solid 2px #00A513;
+}
+.cagnotte-modal-block .create-bon{
+    background-color: #0040E2;
+    border: solid 2px #0040E2;
+}
+
+
+.cagnotte-modal-block .redirect-maps:hover{
+    color: #00A513;
+    background-color: #fff;
+    border: solid 2px #00A513;
+}
+
+.cagnotte-modal-block .create-bon:hover{
+    color: #0040E2;
+    background-color: #fff;
+    border: solid 2px #0040E2;
+}

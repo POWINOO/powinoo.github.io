@@ -1,0 +1,50 @@
+.card-communaute{
+    min-width: 280px;
+    max-width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 10px 3px;
+    text-decoration: none;
+    color: #000;
+}
+
+.card-communaute .img-card{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.card-communaute .card-content{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-communaute .card-join{
+    outline: none;
+    border: none;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 9999px;
+    background-color: #00C2FF;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-communaute .card-join.joined{
+    background-color: #00A513;
+    padding: 2px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

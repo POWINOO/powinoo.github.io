@@ -1,0 +1,95 @@
+.modif-badge-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modif-badge-modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modif-badge-modal-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: url('../../assets/croix.svg');
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.modif-badge-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    min-width: 300px;
+    width: fit-content;
+    max-width: 600px;
+    height: auto;
+    padding: 15px 10px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modif-badge-btn {
+    background-color: #444141;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    margin: 10px;
+}
+
+.input-badge {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.input-badge input{
+    width: 20px;
+    height: 20px;
+}
+
+.input-badge img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+
+.modif-badge-validate-btn{
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #00A513;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.modif-badge-validate-btn:hover{
+    background-color: #00690c;
+}

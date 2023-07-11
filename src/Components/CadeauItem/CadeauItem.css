@@ -1,0 +1,36 @@
+.cadeau-item{
+    width: calc(100% - 20px);
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFB300;
+    border-radius: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cadeau-name{
+    font-size: 20px;
+}
+
+.cadeau-montant{
+    font-size: 18px;
+}
+
+.cadeau-message, .cadeau-date{
+    color: #222;
+}
+
+.cadeau-accept{
+    width: auto;
+    background-color: #DE0009;
+    margin: 5px 5px 0 5px;
+    border-radius: 9999px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.cadeau-accept:hover{
+    background-color: #fff;
+    color: #DE0009;
+}

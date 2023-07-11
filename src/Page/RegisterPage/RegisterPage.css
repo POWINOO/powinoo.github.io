@@ -1,0 +1,100 @@
+.register{
+    text-align: center;
+    min-height: calc(100vh - 112px);
+}
+
+.register h2{
+    margin: 0px 0 10px 0;
+}
+
+.register-container{
+    border: solid 1px #000;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.register-container .register-header{
+    display: flex;
+}
+
+.register .redirect-account{
+    margin-top: 15px;
+}
+.register .redirect-account a{
+    font-weight: bold;
+    color: #14FF00;
+}
+
+.register-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-body input{
+    width: calc(100% - 40px);
+}
+
+.register-body .sexe-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.register-body input[type="radio"]{
+    width: 16px;
+    height: 16px;
+    margin: 0 15px 0 4px;
+}
+
+.register-body .info-create-account{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+}
+.register-body .info-create-account a{
+    color: #0040E2;
+    text-decoration: none;
+}
+
+/* ======= Input =========*/
+.register-input {
+    margin: 5px 0;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.register-input:focus, .register-input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+}
+
+.register-input::placeholder {
+    color: #777;    
+}
+
+.register-input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.register-body button {
+    background-color: #444141;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    margin: 10px;
+}

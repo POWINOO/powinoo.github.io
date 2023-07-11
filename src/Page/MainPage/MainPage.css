@@ -1,0 +1,210 @@
+.main-accueil{
+    max-height: calc(100vh - 112px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .main-accueil{
+        max-height: calc(100vh - 133px);
+        justify-content: start;
+    }
+}
+
+.logo-accueil{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 233px;
+    cursor: pointer;
+}
+
+.logo-accueil .logo-img{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/Favicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.logo-accueil .wave-logo{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #00A513;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    animation: wave 1.6s infinite;
+}
+
+@keyframes wave {
+    0%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+.accueil-btn-container{
+    margin: 15px 0 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+.accueil-btn-container .btn-accueil{
+    max-width: 180px;
+    width: 35vw;
+    min-width: 80px;
+    /* min-height: 50px; */
+    height: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.3vh;
+    border-radius: 20px;
+    margin: 5px 10px;
+    cursor: pointer;
+    opacity: 0;
+    user-select: none;
+    border: solid 3px transparent;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+    .accueil-btn-container:nth-child(2) .btn-accueil{
+        display: none;
+    }
+
+    .accueil-btn-container{
+        margin: 5px 0 5px 0;
+        justify-content: center;
+    }
+
+    .btn-accueil{
+        height: 50px !important;
+    }
+}
+
+.accueil-btn-container .btn-accueil.color-1{
+    background-color: #00A513;
+}
+.accueil-btn-container .btn-accueil.color-1:hover{
+    background-color: #fff;
+    color: #00A513;
+    border: solid 3px #00A513;
+}
+.accueil-btn-container .btn-accueil.color-2{
+    background-color: #0040E2;
+}
+.accueil-btn-container .btn-accueil.color-2:hover{
+    background-color: #fff;
+    color: #0040E2;
+    border: solid 3px #0040E2;
+}
+.accueil-btn-container .btn-accueil.color-3{
+    background-color: #FFB300;
+}
+.accueil-btn-container .btn-accueil.color-3:hover{
+    background-color: #fff;
+    color: #FFB300;
+    border: solid 3px #FFB300;
+}
+.accueil-btn-container .btn-accueil.color-4{
+    background-color: #DE0009;
+}
+.accueil-btn-container .btn-accueil.color-4:hover{
+    background-color: #fff;
+    color: #DE0009;
+    border: solid 3px #DE0009;
+}
+
+.accueil-btn-container .btn-accueil:nth-child(1){
+    animation: fadeBtnAccueilDown 1.5s  forwards;
+}
+.accueil-btn-container .btn-accueil:nth-child(2){
+    animation: fadeBtnAccueilDown 1.5s 0.2s forwards;
+}
+.accueil-btn-container .btn-accueil:nth-child(3){
+    animation: fadeBtnAccueilDown 1.5s 0.4s forwards;
+}
+.accueil-btn-container .btn-accueil:nth-child(4){
+    animation: fadeBtnAccueilDown 1.5s 0.6s forwards;
+}
+
+.accueil-btn-container:nth-child(1) .btn-accueil:nth-child(1){
+    animation: fadeBtnAccueilUp 1.5s .6s  forwards;
+}
+.accueil-btn-container:nth-child(1) .btn-accueil:nth-child(2){
+    animation: fadeBtnAccueilUp 1.5s .4s  forwards;
+}
+.accueil-btn-container:nth-child(1) .btn-accueil:nth-child(3){
+    animation: fadeBtnAccueilUp 1.5s .2s  forwards;
+}
+.accueil-btn-container:nth-child(1) .btn-accueil:nth-child(4){
+    animation: fadeBtnAccueilUp 1.5s   forwards;
+}
+
+.accueil-btn-container:nth-child(2) .btn-accueil:nth-child(1){
+    animation: fadeBtnAccueilLeft 1.5s .2s  forwards;
+}
+.accueil-btn-container:nth-child(2) .btn-accueil:nth-child(3){
+    animation: fadeBtnAccueilRight 1.5s .2s  forwards;
+}
+
+@keyframes fadeBtnAccueilDown {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeBtnAccueilUp {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeBtnAccueilRight {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeBtnAccueilLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

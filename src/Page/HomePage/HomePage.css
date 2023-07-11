@@ -1,0 +1,184 @@
+.home{
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+}
+
+.commu-container, .tchat-container{
+    background-color: #fff;
+    width: 100%;
+    border: solid 1px #000;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-radius: 6px;
+    margin: 3px 0;
+}
+.commu-container{
+    border: solid 4px #00A513;
+}
+.tchat-container{
+    border: solid 4px #0040E2;
+}
+
+.commu-container h4, .tchat-container h4{
+    display: none;
+    text-align: center;
+}
+
+.commu-container::-webkit-scrollbar, .tchat-container::-webkit-scrollbar {
+    width: 8px; /* Largeur de la scrollbar */
+    height: 0px;
+}
+
+.commu-container::-webkit-scrollbar-thumb, .tchat-container::-webkit-scrollbar-thumb {
+    border-radius: 4px; /* Rayon de bordure du curseur */
+}
+
+.home-container{
+    height: calc(100% - 90px);
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.home-header{
+    width: 100%;
+    display: flex;
+}
+
+.home-header .home-tab{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+}
+
+.home-tab.ht-red{
+    background-color: #DE0009;
+}
+.home-tab.ht-red:hover{
+    background-color: #fff;
+    color: #DE0009;
+}
+
+.home-tab.ht-yellow{
+    background-color: #FFB300;
+}
+.home-tab.ht-yellow:hover{
+    background-color: #fff;
+    color: #FFB300;
+}
+
+.home-tab.ht-blue{
+    background-color: #0040E2;
+}
+.home-tab.ht-blue:hover{
+    background-color: #fff;
+    color: #0040E2;
+}
+
+.home-tab.ht-green{
+    background-color: #00A513;
+}
+.home-tab.ht-green:hover{
+    background-color: #fff;
+    color: #00A513;
+}
+
+.home-header .home-tab p{
+    display: none;
+}
+.home-header .home-tab img{
+    width: 30px;
+    height: 30px;
+}
+
+.home-body{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 42px);
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 600px) {
+    .home{
+        width: 100vw;
+        height: calc(100vh - 90px);
+        flex-direction: row;
+    }
+
+    .home-container{
+        width: 100%;
+        height: calc(100% - 20px);
+        margin: 10px 10px 10px 20px;
+        /* animation: border-c .3s ease-in-out infinite; */
+    }
+
+    @keyframes border-c {
+        0%{border-color: #00A513;}
+        25%{border-color: #0040E2;}
+        50%{border-color: #FFB300;}
+        75%{border-color: #DE0009;}
+        100%{border-color: #00A513;}
+      }
+
+    .home-container.hc-red{
+        border: solid 10px #DE0009;
+    }
+    .home-container.hc-yellow{
+        border: solid 10px #FFB300;
+    }
+    .home-container.hc-blue{
+        border: solid 10px #0040E2;
+    }
+    .home-container.hc-green{
+        border: solid 10px #00A513;
+    }
+
+    .commu-container, .tchat-container{
+        width: 200px;
+        height: calc(100% - 20px);
+        margin: 10px 0 10px 10px;
+        padding: 5px;
+        flex-direction: column;
+        overflow-x: auto;
+        overflow-y: scroll;
+    }
+    .commu-container{
+        border: solid 10px #00A513;
+    }
+    .tchat-container{
+        border: solid 10px #0040E2;
+    }
+
+    .commu-container::-webkit-scrollbar {
+        width: 8px; /* Largeur de la barre de défilement */
+    }
+
+    .commu-container .commu{
+        width: 120px;
+        height: 120px;
+        margin: 5px 0;
+    }
+
+    .commu-container h4, .tchat-container h4{
+        display: block;
+    }
+
+    .home-header .home-tab{
+        width: fit-content;
+    }
+    .home-header .home-tab p{
+        display: block;
+    }
+    .home-header .home-tab img{
+        display: none;
+    }
+}

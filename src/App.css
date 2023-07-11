@@ -1,0 +1,104 @@
+/* ================================ Header ==================================== */
+header{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .logo-header{
+    display: block;
+    width: 202px;
+    height: 80px;
+    background-image: url('./assets/Logo-asso.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 0 0 2vw;
+}
+
+header .logo-header:hover{
+    background-image: url('./assets/sprite-logo.jpg');
+}
+
+header .header-slogan{
+    cursor: pointer;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .connect-btn{
+    cursor: pointer;
+    /* width: 80px; */
+    height: auto;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 2vw 0 auto;
+    transition: all .3s;
+}
+header .connect-btn:hover{
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 680px) {
+    header .logo-header{
+        width: 151px;
+        height: 60px;
+    }
+    header .connect-btn img{
+        width: 50px;
+    }
+
+    header .header-slogan{
+        display: none;
+    }
+}
+
+/* ================================ Main ==================================== */
+main{
+    min-height: calc(100vh - 111px);
+}
+
+/* ================================ Footer ==================================== */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    z-index: -1;
+}
+footer p{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer p:hover{
+    text-decoration: underline;
+}
+
+/*=================== Onglets ============================*/
+.tab{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 9px;
+    background-color: #CDCDCD;
+}
+.tab.active-tab{
+    background-color: #0040E2;
+    color: #fff;
+}

@@ -1,0 +1,150 @@
+.gestion-commu-modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.gestion-commu-modal-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gestion-commu-modal-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 500px;
+    height: auto;
+    min-height: 488px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.close-gestion-commu-modal{
+    width: 40px;
+    height: 40px;
+    margin: 5px 0 -10px 5px;
+    background-image: url('../../assets/croix.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.gestion-commu-modal-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.gestion-commu-modal-header .modal-onglet{
+    /* width: 33.33333333333333333333%; */
+    width: 100%;
+    text-align: center;
+    /* font-size: 2.1vh; */
+    font-size: 17.5px;
+    font-weight: bold;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.gestion-commu-modal-header .modal-onglet.mo-active{
+    color: #fff;
+}
+.gestion-commu-modal-header .modal-onglet.mo-active:nth-child(1){
+    background-color: #FFB300;
+}
+.gestion-commu-modal-header .modal-onglet.mo-active:nth-child(2){
+    background-color: #DE0009;
+}
+.gestion-commu-modal-header .modal-onglet.mo-active:nth-child(3){
+    background-color: #0040E2;
+}
+
+.gestion-commu-modal-titre{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.gestion-commu-modal-block{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.gestion-commu-demande-container{
+    width: 100%;
+    height: calc(100% - 155px);
+    /* background-color: green; */
+    overflow-y: scroll;
+}
+
+/* ========= EDITER ==========*/
+.gestion-commu-input {
+    width: calc(100% - 40px);
+    margin: 10px 0;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    font-size: 18px;
+    resize: none;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+textarea.gestion-commu-input {
+    font-size: 15px;
+}
+
+.gestion-commu-input:focus, .gestion-commu-input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+}
+
+.gestion-commu-input::placeholder {
+    color: #777;    
+}
+
+.gestion-commu-input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.gestion-commu-edit-validate{
+    background-color: #00A513;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    margin: 0 2px;
+}
+.gestion-commu-edit-delete{
+    background-color: #DE0009;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    margin: 0 2px;
+}

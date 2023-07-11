@@ -1,0 +1,66 @@
+.communaute-titre{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 3.3vh;
+}
+
+.commu-recherche{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 1vw;
+    background-color: #fff;
+}
+
+.commu-recherche input{
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
+    width: 95%;
+    padding: 10px 8px;
+    font-size: 18px;
+    border-radius: 9999px;
+}
+
+.commu-recherche .commu-recherche-btn{
+    width: fit-content;
+    outline: none;
+    border: none;
+    background-color: #0040E2;
+    border: solid 3px #0040E2;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+.commu-recherche .commu-recherche-btn:hover{
+    background-color: #fff;
+    color: #0040E2;
+}
+
+.card-commu-container{
+    width: 100%;
+    /* height: calc(100% - 130px) !important; */
+    height: calc(100% - 114px) !important;
+    padding: 10px 20px 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 600px) {
+    .card-commu-container{
+        height: calc(100% - 104px) !important;
+    }
+}

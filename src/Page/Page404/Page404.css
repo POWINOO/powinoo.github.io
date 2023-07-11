@@ -1,0 +1,23 @@
+.page-404{
+    min-height: calc(100vh - 112px);
+    text-align: center;
+}
+
+.page-404 .logo-triste{
+    min-width: 270px;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+}
+
+.page-404 .back-accueil{
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFB300;
+    padding: 8px 12px;
+    border-radius: 9999px;
+    margin: 10px auto;
+}

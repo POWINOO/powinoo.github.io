@@ -1,0 +1,192 @@
+.bon-achat-item{
+    width: calc(100% - 20px);
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+.bon-achat-item.ba-statue-use-wait{background-color: #FFB300;}
+.bon-achat-item.ba-statue-validate-wait{background-color: #0040E2;}
+.bon-achat-item.ba-statue-validate{background-color: #00A513;}
+.bon-achat-item.ba-statue-refuse{background-color: #DE0009;}
+
+.bon-achat-item .bon-achat-item-container{
+    display: flex;
+}
+@media screen and (max-width: 500px) {
+    .bon-achat-item .bon-achat-item-container{
+        flex-direction: column;
+    }
+}
+.bon-achat-item-btn-container{
+    display: flex;
+    margin-left: auto;
+}
+
+.bon-achat-item-date{
+    /* color: #555; */
+    font-size: 14px;
+}
+
+.bon-achat-item-btn-container .bon-achat-use-btn, .bon-achat-item-btn-container .bon-achat-edit-btn{
+    width: 45px;
+    height: 45px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.bon-achat-item-btn-container .bon-achat-edit-btn:hover{
+    background-color: #DE0009;
+    border-color: #DE0009;
+}
+
+.bon-achat-item-btn-container .bon-achat-use-btn:hover{
+    background-color: #0040E2;
+    border-color: #0040E2;
+}
+
+/* ========= Use Container*/
+
+.use-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bon-achat-use-btn-container{
+    display: flex;
+}
+
+.bon-achat-use-suivant{
+    margin: 5px;
+    border-radius: 9999px;
+    border: solid 3px #000;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.bon-achat-use-suivant:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.bon-achat-use-valider{
+    margin: 5px;
+    border-radius: 9999px;
+    border: solid 3px #000;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.bon-achat-use-valider:hover{
+    background-color: #00A513;
+    border-color: #00A513;
+    color: #fff;
+}
+
+
+/* ========= Edit Container*/
+.bon-achat-delete-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bon-achat-delete-container p{
+    text-align: center;
+    color: #333;
+}
+
+.bon-achat-delete-container button{
+    outline: none;
+    border: none;
+    margin: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    border: solid 2px #000;
+    color: #fff;
+    cursor: pointer;
+    background-color: #DE0009;
+}
+@media screen and (max-width: 400px) {
+    .bon-achat-item-info-renseigne{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.bon-achat-item-info-renseigne{
+    display: flex;
+    margin-top: 5px;
+}
+.bon-achat-item-info-renseigne img{
+    width: 40%;
+    height: auto;
+}
+.bon-achat-item-btn-validate,
+.bon-achat-item-btn-refuse{
+    padding: 2px 8px;
+    border-radius: 9999px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.bon-achat-item-btn-validate{
+    border: solid 4px #00A513;
+    color: #00A513;
+}
+.bon-achat-item-btn-validate:hover{
+   background-color: #00A513;
+   color: #fff;
+}
+.bon-achat-item-btn-refuse{
+    border: solid 4px #DE0009;
+    color: #DE0009;
+}
+.bon-achat-item-btn-refuse:hover{
+    background-color: #DE0009;
+    color: #fff;
+ }
+
+
+
+/* ===================== Input ===========================*/
+.input-edit-bon-achat {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #fff;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.input-edit-bon-achat:focus, .input-edit-bon-achat:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #fff;
+}
+
+.input-edit-bon-achat::placeholder {
+    color: #000;    
+}
+
+.input-edit-bon-achat:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}

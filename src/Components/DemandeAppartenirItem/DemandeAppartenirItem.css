@@ -1,0 +1,106 @@
+.demande-appartenir-item{
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 5px;
+    background-color: #aaa;
+    border-radius: 20px;
+    display: flex;
+}
+
+.demande-appartenir-item .da-item-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.da-item-name{
+    width: fit-content;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.da-item-date-create{
+    margin-left: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+.da-item-date-validate{
+    margin-left: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #00A513;
+}
+.da-item-date-refuse{
+    margin-left: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #DE0009;
+}
+
+.da-item-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.da-item-btn-container{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: auto;
+}
+.da-item-btn-container .da-item-accept-btn, .da-item-btn-container .da-item-reject-btn{
+    width: fit-content;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px 10px;
+    margin: 4px 0 0 5px;
+}
+.da-item-btn-container .da-item-accept-btn{
+    background-color: #FFB300;
+}
+.da-item-btn-container .da-item-reject-btn{
+    background-color: #DE0009;
+}
+
+.da-item-statue{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da-item-statue.validate-statue{
+    background-color: #00A513;
+}
+.da-item-statue.refuse-statue{
+    background-color: #DE0009;
+}
+
+@media screen and (max-width: 360px) {
+    .da-item-btn-container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .da-item-name{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .da-item-content{
+        justify-content: end;
+    }
+}

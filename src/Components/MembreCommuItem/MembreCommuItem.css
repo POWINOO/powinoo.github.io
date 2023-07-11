@@ -1,0 +1,107 @@
+.membre-commu-item{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 16px);
+    border-radius: 9999px;
+    margin: 8px;
+    background-color: #bbb;
+    padding: 5px;
+}
+
+.membre-badge-container{
+    display: flex;
+    margin-left: 12px;
+}
+.membre-badge-container img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.membre-badge-item{
+    position: relative;
+}
+.membre-badge-item:hover p{
+    display: block;
+}
+.membre-badge-item p{
+    display: none;
+    position: absolute;
+    transform: translateX(-30%);
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+
+.membre-commu-item .membre-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.membre-commu-item .membre-name a{
+    color: #000;
+    text-decoration: none;
+}
+.membre-commu-item .membre-name a:hover{
+    text-decoration: underline;
+}
+.membre-commu-item .membre-name img{
+    margin-left: 5px;
+}
+.membre-commu-item .membre-img{
+    background-color: #000;
+}
+
+.membre-commu-item .membre-img,
+ .membre-commu-item .membre-gift-btn,
+  .membre-commu-item .membre-is-online,
+  .membre-commu-item .membre-exclure{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.membre-ml{
+    margin-left: auto;
+}
+
+.membre-commu-item .membre-gift-btn{
+    border: solid 1px #000;
+    margin: 0 5px 0 auto;
+    background-image: url('../../assets/gift.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.membre-commu-item .membre-gift-btn:hover{
+    background-color: #888;
+}
+
+.membre-commu-item .membre-is-online{
+    background-color: #DE0009;
+}
+.membre-commu-item .membre-is-online.online{
+    background-color: #00A513;
+}
+
+.membre-exclure{
+    /* border: solid 1px #000; */
+    margin: 0 5px 0 auto;
+    background-image: url('../../assets/exclude.svg');
+    /* background-size: 80%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.membre-exclure:hover{
+    /* border: solid 1px #DE0009; */
+    background-color: rgba(222, 0, 9, 0.2);
+}

@@ -1,0 +1,39 @@
+.historique-item{
+    width: calc(100% - 20px);
+    height: auto;
+    background-color: #DE0009;
+    color: #fff;
+    margin: 5px 10px;
+    border-radius: 15px;
+    padding: 8px 12px;
+}
+.historique-item.positif{
+    background-color: #00A513;
+}
+.historique-item:hover .historique-plus-info{
+    display: block;
+}
+
+.historique-main-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.historique-item p{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.historique-item p img{
+    margin-right: 5px;
+}
+
+.historique-plus-info{
+    display: none;
+    text-align: left;
+}
+.historique-plus-info p{
+    font-size: 14px;
+}

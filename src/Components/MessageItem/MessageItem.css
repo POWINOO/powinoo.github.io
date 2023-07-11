@@ -1,0 +1,72 @@
+.message-item{
+    max-width: calc(90% - 20px);
+    width: fit-content;
+    margin: 10px;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #bbb;
+    display: flex;
+}
+.message-item.mine-message{
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+
+.message-item-admin-info{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin: 30px 0 0 10px;
+}
+
+.message-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #555;
+}
+
+.message-content{
+    margin: 0 10px;
+    width: calc(100% - 80px);
+}
+
+.message-content-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.message-content-infos .message-name-user{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.message-content-infos .message-date{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+.message-content .message-content-text{
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 600px) {
+
+    .message-item{
+        max-width: calc(70% - 20px);
+    }
+}
+@media screen and (min-width: 450px) {
+
+    .message-content-infos{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+}

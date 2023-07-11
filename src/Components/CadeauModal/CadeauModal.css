@@ -1,0 +1,62 @@
+.cadeau-modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.cadeau-modal-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cadeau-modal-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.close-cadeau-modal{
+    width: 40px;
+    height: 40px;
+    margin: 5px 0 -10px 5px;
+    background-image: url('../../assets/croix.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.cadeau-modal-container h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+.no-cadeau{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.no-cadeau img{
+    width: 130px;
+    height: auto;
+}
+
+.cadeau-modal-container .list-cadeau-container{
+    height: 428px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow-y: scroll;
+}
