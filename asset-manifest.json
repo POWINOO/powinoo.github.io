@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a6052f8d.css",
-    "main.js": "/static/js/main.19b85c06.js",
+    "main.js": "/static/js/main.d676e8a7.js",
     "static/media/loader.gif": "/static/media/loader.26ba80b93a2ac89b956f.gif",
     "static/media/powinoo-triste.png": "/static/media/powinoo-triste.965e1a84c94b3d52c9c5.png",
     "static/media/sprite-logo.jpg": "/static/media/sprite-logo.c01ab313cef0da9b1a01.jpg",
@@ -35,10 +35,10 @@
     "static/media/check.svg": "/static/media/check.3ce665961dff9f2d4a3faab13aa0002f.svg",
     "static/media/send-message.svg": "/static/media/send-message.b92cbc2e07531901cd6ce77392a82478.svg",
     "main.a6052f8d.css.map": "/static/css/main.a6052f8d.css.map",
-    "main.19b85c06.js.map": "/static/js/main.19b85c06.js.map"
+    "main.d676e8a7.js.map": "/static/js/main.d676e8a7.js.map"
   },
   "entrypoints": [
     "static/css/main.a6052f8d.css",
-    "static/js/main.19b85c06.js"
+    "static/js/main.d676e8a7.js"
   ]
 }
