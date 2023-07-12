@@ -14,8 +14,12 @@ export default function LoginPage() {
 
   const signIn = (e) => {
     e.preventDefault()
-    signInWithEmailAndPassword(auth, email, password)
-    navigate('/')
+    signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+      navigate('/')
+    }).catch((err)=> {
+      console.log(err.code)
+      console.log(err.message)
+    })
   }
 
   const passwordForgot = () => {
